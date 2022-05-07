@@ -7,25 +7,22 @@ class Navbar extends React.Component {
         return (
             <nav className="NavbarItems">
                 <h1 className="navbar-header">React</h1>
-               
+
                 <ul className="list-inline">
-                    {MenuItems.map((item, index) =>{
-                        return(
+                    {MenuItems.map((item, index) => {
+                        return (
                             <li key={index}>
                                 <a className={item.cName} href={item.url}>
-                                {item.title}
+                                    {item.title}
                                 </a>
                             </li>
 
                         )
                     })}
-                    
                 </ul>
             </nav>
-            
         )
     }
-
 }
 
 
